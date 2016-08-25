@@ -1,0 +1,14 @@
+<h1>Home Page</h1>
+
+<form ng-submit = 'vm.submit()'>
+<label>Song Name</label>
+<input ng-model='vm.song'></input>
+<button> Submit </button>
+</form>
+
+
+<ul>
+  <li ng-repeat="song in vm.songs">
+    <b>Name:</b> {{song}}
+  </li>
+</ul>
